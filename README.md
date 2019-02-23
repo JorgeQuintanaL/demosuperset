@@ -38,14 +38,14 @@ Instalando docker-compose
 curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
 chmod +x /usr/local/bin/docker-compose
-
-
 ```
 
-
+Una vez se tiene instalado docker-compose se clona el repositorio de Github de Superset y se ingresa a la ruta donde están los archivos de Docker (Dockerfile, docker-compose.yml, etc). Desde esa ubicación se hace un docker-compose para construir la imagen y los demás servicios. Finalmente, se sube el servicio.
 ``` bash
 git clone https://github.com/apache/incubator-superset/
 cd incubator-superset/contrib/docker
 docker-compose run --rm superset ./docker-init.sh
 docker-compose up
 ```
+
+Hay que hacer una modificación en el Dockerfile: Hay que eliminar la línea en donde se define el usuario (USER superset). También hay que modificar el archivo docker-entrypoint.sh y agregar una línea antes de la definición de APP de Flash.

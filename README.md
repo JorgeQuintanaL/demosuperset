@@ -1,6 +1,6 @@
 # Cómo instalar Apache Superset en una instancia de GCP usando la imagen de pública de Docker
 
-<img src=“img/s.png” style=“float: left”, margin: 20px>
+<img src=“img/s.png” style=“float: left; margin: 20px”>
 
 
 

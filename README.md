@@ -1,4 +1,4 @@
-<p align = “center”><img src=“img/super_gcp.png” /></p>
+<p align = "center"><img src="img/super_gcp.png" /></p>
 
 Prueba de Concepto de Apache Superset sobre un ambiente en Google Cloud usando un conjunto de datos obtenidos en [Datos Abiertos](https://www.datos.gov.co/browse?q=Observatorio%20de%20paz&sortBy=relevance) 
 

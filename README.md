@@ -1,4 +1,19 @@
-# Apache SuperSet Demo on GCP
+													
+# Demostración de Apache Superset
+## Dirección de Analítica
+#### Marzo 1 de 2019
+
+
+
+- - - -
+
+
+# Cómo instalar Apache Superset en una instancia de GCP usando la imagen de pública de Docker
+
+[SupersetLogo](img/s.png)
+
+
+
 Cambiando el usuario a root y actualizando los repositorios. Luego, se instalan las dependencias para los pasos siguientes.
 ``` bash
 sudo su

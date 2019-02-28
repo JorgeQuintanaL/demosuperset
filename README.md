@@ -1,6 +1,8 @@
-# Cómo instalar Apache Superset en una instancia de GCP usando la imagen de pública de Docker
+<p align = “center”><img src=“img/super_gcp.png” /></p>
 
-<img src="img/s.png" />
+Prueba de Concepto de Apache Superset sobre un ambiente en Google Cloud usando un conjunto de datos obtenidos en [Datos Abiertos](https://www.datos.gov.co/browse?q=Observatorio%20de%20paz&sortBy=relevance) 
+
+Cómo instalar Apache Superset en una instancia de GCP usando la imagen de pública de Docker
 
 Cambiando el usuario a root y actualizando los repositorios. Luego, se instalan las dependencias para los pasos siguientes.
 ``` bash

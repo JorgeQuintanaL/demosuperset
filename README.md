@@ -1,16 +1,6 @@
-													
-# Demostración de Apache Superset
-## Dirección de Analítica
-#### Marzo 1 de 2019
-
-
-
-- - - -
-
-
 # Cómo instalar Apache Superset en una instancia de GCP usando la imagen de pública de Docker
 
-![SupersetLogo](img/s.png)
+<img src=“img/s.png” style=“float: left”, margin: 20px>
 
 
 

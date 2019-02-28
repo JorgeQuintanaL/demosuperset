@@ -1,4 +1,4 @@
-<p align = “center”><img src=“img/super_gcp.png” /></p>
+<p align = "center"><img src="img/super_gcp.png" /></p>
 
 ### Prueba de Concepto de Apache Superset sobre un ambiente en Google Cloud 
 

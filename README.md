@@ -71,3 +71,24 @@ docker-compose up
 ### Problemas con la instalación:
 
 Algunos usuarios han presentado problemas con el proceso de instalación. Para resolver dichos problemas se recomienda leer [Contributing Guidelines]([incubator-superset/CONTRIBUTING.md at master · apache/incubator-superset · GitHub](https://github.com/apache/incubator-superset/blob/master/CONTRIBUTING.md))
+
+
+### Cruzando las bases y realizando algunas transformaciones iniciales
+
+Para revisar el proceso de cruce y enriquecimiento de la base de datos, revisar el Notebook *superset_demo.ipynb*
+
+### Cargando los datos a PostgreSQL
+
+Para conectarse de forma remota con el contenedor que tiene PostgreSQL, desde la instancia de GCP, se debe instalar un cliente de PostgreSQL. Una vez instalado podremos acceder a la base usando la segunda línea. En este caso, el host (-h) y el puerto (-p) son definidos cuando se crea el contenedor con base en la imagen de Docker y cuando se hace el docker-compose
+``` bash
+apt-get install postgresql-client
+psql -U superset -h 0.0.0.0 -p 5432
+```
+
+
+Luego, para crear la tabla y cargar los datos se ejecuta el script *load_data.sql* (disponible en la carpeta data) con el siguiente comando
+```
+psql -U superset -h 0.0.0.0 -p 5432 -f load_data.psl -d superset
+```
+
+Una vez ejecutado la tabla está lista para ser usada desde Superset.

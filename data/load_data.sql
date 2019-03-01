@@ -42,8 +42,8 @@ CREATE TABLE IF NOT EXISTS public."superset_demo" (
   monto_asignado VARCHAR(10),
   n_cleo_familiar VARCHAR(50),
   personas FLOAT,
-  geo POINT,
-  _merge VARCHAR(50)
+  _merge VARCHAR(50),
+  geo POINT
 );
 
 \copy public."superset_demo" from 'data_final.csv' DELIMITER ',' CSV HEADER;
